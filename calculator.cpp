@@ -51,7 +51,7 @@ int main()
         }
         else if(*iter == '-'){
             auto iter_prev = iter - 1;
-            if(iter == expr.begin() || *iter_prev != ')' || *iter_prev == '+'){ // negitave num
+            if(iter == expr.begin() || *iter_prev != ')' || *iter_prev == '+'){ // negative num
                 tmp = get_num(expr, iter);
                 svec.push_back(tmp);
             }
